@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="container">
+        <h1>Linux Command Output</h1>
+        <label for="in1">Enter your Command</label>
+        <input id="in1" name="c" type="text">
+        <br>
+        <button onclick="lw()">Enter</button>
+        <div id="output">
+            <pre>
+                <p id="p1"></p>
+            </pre>
+        </div>
+    </div>
+
+    <script>
+        function lw() {
+            var xhr = new XMLHttpRequest();
+            var mycmd = document.getElementById("in1").value;
+            xhr.open("GET", "http://3.110.210.61/cgi-bin/back.py?c=" + mycmd, true);
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    document.getElementById("p1").innerHTML = this.responseText;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
