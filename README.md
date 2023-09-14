@@ -30,7 +30,7 @@ It sets the color and appearance of the heading, labels, input fields, and butto
 <body>: This section contains the actual content of the webpage.
 It starts with a background overlay and a container to center the content on the page.
 
-Inside the container, there's an <h1> element with the title "Linux Command Output."
+Inside the container, there's a title element with the title "Linux Command Output."
 
 A label and an input field are provided for users to enter their Linux commands.
 
