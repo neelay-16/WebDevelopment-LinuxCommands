@@ -58,6 +58,52 @@ Overall, this code creates a web page that allows users to input Linux commands,
 
 # [Back End]
 
+This Python script appears to be a CGI script that allows you to execute various commands on a server and display the results as an HTML response. Let's break down the code step by step:
+
+1. Shebang and Import Statements:
+
+  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/fb9fff5f-6860-41f5-8107-aab8362e7a9e)
+
+1. The shebang (#!/usr/bin/python3) specifies the interpreter that should be used to run the script, which is Python 3 in this case.
+2. subprocess is imported to run shell commands from within the script.
+3. cgi is imported to handle Common Gateway Interface (CGI) input and output.
+4. boto3 is imported to interact with AWS services, specifically EC2.
+
+
+2. Setting HTTP Headers:
+
+![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/5384be9a-98ea-4cfe-84dd-18c1e4ad026f)
+
+This sets the HTTP response headers. It specifies that the content type is text/html, indicating that the response will be HTML content.
+
+3. Parsing CGI Input:
+
+  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/067d4e51-60da-433c-ab19-c8ac39cce215)
+
+This code parses CGI input data. It retrieves the value of the parameter named "c" from the CGI input. This parameter is expected to contain the command to be executed.
+
+
+4. Command Execution and Output Display:
+
+  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/b28c3eec-e60e-4fbb-9325-2f26e194fdd1)
+
+The script checks the value of cmd (the command to be executed) and executes different commands based on its content. Here are the supported commands and their actions:
+1. docker ps: List running Docker containers and display their details.
+2. date: Display the current date and time.
+3. cal: Display a calendar.
+4. ls: List files and directories in the current directory.
+5. pwd: Display the current working directory.
+6. docker images: List Docker images and display their details.
+7. aws ec2 launch: Launch an AWS EC2 instance using the provided AWS access and secret keys.
+
+
+5. Default Case
+
+![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/0f386f55-2176-48ea-b708-24bef3d272df)
+
+If the command doesnt match any of the predefined commands, the script assumes it's a custom shell command and executes it using subprocess.getoutput(). The output is then printed in the HTML response.
+
+  
 
 
 
