@@ -53,7 +53,7 @@ A button with the text "Enter" is available for users to submit their commands.
 
 ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/a26f3cdb-ee9f-42be-88ca-503b2645ee90)
 
-Below the button, there's a <div> with the id "output" that will display the output of the Linux command. The output is displayed inside a <pre> (preformatted text) element.
+Below the button, there's a <div> with the id "output" that will display the output of the Linux command. The output is displayed inside a <pre> tag.
 
 ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/fb0ad594-73a4-4a97-bf70-d2ebef6584b4)
 
