@@ -95,14 +95,14 @@ This sets the HTTP response headers. It specifies that the content type is text/
 
 3. Parsing CGI Input:
 
-  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/067d4e51-60da-433c-ab19-c8ac39cce215)
+![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/067d4e51-60da-433c-ab19-c8ac39cce215)
 
 This code parses CGI input data. It retrieves the value of the parameter named "c" from the CGI input. This parameter is expected to contain the command to be executed.
 
 
 4. Command Execution and Output Display:
 
-  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/b28c3eec-e60e-4fbb-9325-2f26e194fdd1)
+![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/b28c3eec-e60e-4fbb-9325-2f26e194fdd1)
 
 The script checks the value of cmd (the command to be executed) and executes different commands based on its content. Here are the supported commands and their actions:
 1. docker ps: List running Docker containers and display their details.
