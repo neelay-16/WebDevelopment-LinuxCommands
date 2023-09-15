@@ -58,7 +58,7 @@ Below the button, there's a <div> with the id "output" that will display the out
 ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/fb0ad594-73a4-4a97-bf70-d2ebef6584b4)
 
 
-<script>: This section contains JavaScript code for handling user interactions and making asynchronous requests to a remote server.
+script tag: This section contains JavaScript code for handling user interactions and making asynchronous requests to a remote server.
 
 ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/35b47349-3357-4dba-bb25-545f3a297235)
 
