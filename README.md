@@ -29,9 +29,9 @@ title : Linux Command Output</title>: Sets the title of the webpage to "Linux Co
 
 ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/26e9d7d3-8e83-45f6-8978-f24ed1967086)
 
-<style>: This section contains CSS (Cascading Style Sheets) rules for styling the webpage.
+style tag: This section contains CSS (Cascading Style Sheets) rules for styling the webpage.
 
-  ![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/97bf6897-4d99-4cc4-8052-b0178f4e0e8f)
+![image](https://github.com/neelay-16/WebDevelopment-LinuxCommands/assets/135517502/97bf6897-4d99-4cc4-8052-b0178f4e0e8f)
 
 
 It defines the webpage's background, fonts, layout, and styling for various elements like buttons and input fields.
